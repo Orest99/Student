@@ -28,6 +28,14 @@ for item2 int list2:
     print(item2)
     print (type(item2))
 #-------------------------------------------------------------
-
-
-#------------------------------------------------------------        
+list3= []
+text2= "Hello world"
+f_n= ""Orest""
+l_n= "Yakobchuk"
+list3.append(f_n)
+list3.append(l_n)
+list3.append(text2)
+info= " ".Join(list(text2))
+list3.append(info)
+print (list3)
+#------------------------------------------------------------
