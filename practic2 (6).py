@@ -27,11 +27,6 @@ if type(age) == int:
     if age == 17:
         print("Вік: ",{age}, "тип: ",type(age))
 #------------------------------------------------------------
-list2 = []
-for item2 int list2:
-    print(item2)
-    print (type(item2))
-#-------------------------------------------------------------
 list3= []
 text2= "Hello world"
 f_n= ""Orest""
