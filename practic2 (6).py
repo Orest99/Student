@@ -11,12 +11,16 @@ list1.append(age)
 for item in list1:
     print (item)
     print(type(item))
+    list1.clear()
+    print("Clearning",list1)
 #------------------------------------------------------------    
 for item in list1:
     if type(item) == str and f_name in item and l_name in item:
         print("Однакове:",item)
     print(item)
     print(type(item))
+    list1.clear()
+    print ("Clearning",list1)
 #------------------------------------------------------------    
 if type(age) == int:
     print("Тип даних віку:",type(age))
@@ -38,4 +42,6 @@ list3.append(text2)
 info= " ".Join(list(text2))
 list3.append(info)
 print (list3)
+list3.clear()
+print("Clearning",list3)
 #------------------------------------------------------------
