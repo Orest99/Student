@@ -29,12 +29,12 @@ if type(age) == int:
 #------------------------------------------------------------
 list3= []
 text2= "Hello world"
-f_n= ""Orest""
+f_n= "Orest"
 l_n= "Yakobchuk"
 list3.append(f_n)
 list3.append(l_n)
 list3.append(text2)
-info= " ".Join(list(text2))
+info= " ".join(list(text2))
 list3.append(info)
 print (list3)
 list3.clear()
