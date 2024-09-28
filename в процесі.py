@@ -9,10 +9,10 @@ def getSortList(poslidovnist):
     chisla=[]
     text=[]
     for item in poslidovnist:
-    if type(item) == int:
-    chisla.append(item)
-    elif type(item) == str:
-    text.append(item)
+        if type(item) == int:
+            chisla.append(item)
+        elif type(item) == str:
+            text.append(item)
     chisla.sort()
     text.sort()
     sorted_list = chisla + text
@@ -22,4 +22,3 @@ def getSortList(poslidovnist):
 
 print("Список без повторень:", poslidovnist)
 print("Відсортований список:", sorted_list  
-
