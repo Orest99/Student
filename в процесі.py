@@ -5,20 +5,21 @@ def getList(list1):
     poslidovnist = list(dubl)
     return poslidovnist
     
-def getSortList(poslidovnist):
-    chisla=[]
-    text=[]
-    for item in poslidovnist:
-        if type(item) == int:
-            chisla.append(item)
-        elif type(item) == str:
-            text.append(item)
-    chisla.sort()
-    text.sort()
-    sorted_list = chisla + text
-    return sorted_list
-    poslidovnist = getList(list1)#без повторів
-    sorted_list = getSortList(poslidovnist)
+def getSortList():
+     chisla=[]
+     text=[]
+     for item in poslidovnist:
+       if type(item) == int:
+        chisla.append(item)
+       elif type(item) == str:
+        text.append(item)
 
-print("Список без повторень:", poslidovnist)
-print("Відсортований список:", sorted_list  
+     chisla.sort()
+     text.sort()
+     sorted_list = chisla + text
+     return sorted_list
+     poslidovnist = getList(list1)#без повторів
+     sorted_list = getSort(poslidovnist)
+
+     print("Список без повторень:", poslidovnist)
+     print("Відсортований список:", sorted_list)
