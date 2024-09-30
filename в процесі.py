@@ -5,7 +5,7 @@ def getList(list1):
     poslidovnist = list(dubl)
     return poslidovnist
     
-def getSortList():
+def getSortList(poslidovnist):
      chisla=[]
      text=[]
      for item in poslidovnist:
