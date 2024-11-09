@@ -1,0 +1,40 @@
+import telebot
+
+from my_time import show_time
+
+@show_time
+
+def universal(bot,message, text, buttons):
+
+    keyboard = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
+
+    for item in buttons:
+
+        button = telebot.types.KeyboardButton(item)
+
+        keyboard.add(button)
+
+    for t in text:
+
+        bot.send_message(message.chat.id, t, reply_markup=keyboard)
+import time
+
+
+
+def show_time(func):
+
+    def wrapper(bot,message, text, buttons):
+
+        start_time = time.time()
+
+        result = func(bot,message, text, buttons)
+
+        end_time = time.time()
+
+        res = end_time - start_time
+
+        print('Time: ', res)
+
+        return res
+
+    return wrapper
