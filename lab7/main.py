@@ -4,8 +4,7 @@ from my_time import show_time
 from my_time import main
 from my_universal import universal
 from read_token import get_token
-tok = '7607049913:AAGZIfJPpNJrVd8BSEInb-1Q4PtWWHLvtqE'
-bot = telebot.TeleBot(tok)
+bot = telebot.TeleBot(get_token())
 @bot.message_handler(commands = ['start'])
 def start (message):
    sec =  universal(bot,message=message,text=['Вітаю,я допоможу обрати/зробити павер'],buttons=['До вибору :)'])
