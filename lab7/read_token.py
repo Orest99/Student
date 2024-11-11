@@ -5,3 +5,5 @@ load_dotenv()
 def get_token():
     token = os.environ['Token']
     return token
+a = get_token()
+print(a)
