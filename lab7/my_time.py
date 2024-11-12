@@ -1,17 +1,11 @@
 import time
-
 def show_time(func):
-    def wrapper():
-        start_time = time.time()
-        result = func()
-        end_time = time.time()
-        res = end_time - start_time
-        print('Time: ', res)
+    def wrapper(bot,message,text,buttons):
+        t1 = time.time()
+        res = func(bot,message,text,buttons)
+        t2 = time.time()
+        result = t2-t1
+        print('Time: ',result)
         return res
     return wrapper
-@show_time
-def main():
-    def send_message(message):
-        pass
-    def reply(message):
-        print(message)
+
