@@ -1,5 +1,3 @@
-from curses import wrapper
-
 import telebot
 from telebot import types
 from my_time import show_time
