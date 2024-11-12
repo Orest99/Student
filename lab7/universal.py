@@ -1,5 +1,6 @@
 import telebot
 from my_time import show_time
+
 @show_time
 def universal(bot,message, text, buttons):
     keyboard = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
