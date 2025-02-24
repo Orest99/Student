@@ -3,14 +3,6 @@ class Orest:
         self.first_name = first_name
         self.last_name = last_name
         self.birth_year = birth_year
-
-        if self.first_name is None:
-            self.first_name = "None"
-        if self.last_name is None:
-            self.last_name = "None"
-        if self.birth_year is None:
-            self.birth_year = "None"
-
     def course(self):
         if self.birth_year != "None":
             return 2025 - int(self.birth_year)
@@ -25,10 +17,8 @@ class Orest:
             list1_name.append(self.last_name)
         return list1_name
 class Student(Orest):
-    def __init__(self, first_name=None, last_name=None, birth_year=None,city=None,email=None,ph_num=None):
-        self.first_name = first_name
-        self.last_name = last_name
-        self.birth_year = birth_year
+    def __init__(self,city=None,email=None,ph_num=None):
+        super().__init__(first_name, last_name, birth_year)
         self.city = city
         self.email = email
         self.ph_num = ph_num
